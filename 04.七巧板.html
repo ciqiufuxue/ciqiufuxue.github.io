@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    <script>
+        let canvas = document.getElementById('canvas')
+        let cxt = canvas.getContext('2d')
+
+        cxt.moveTo(0, 0)
+        cxt.lineTo(400, 0)
+        cxt.lineTo(200,200)
+        cxt.closePath()
+        cxt.fillStyle = 'green'
+        cxt.fill()
+        cxt.stroke()
+
+        cxt.beginPath()
+        cxt.moveTo(0, 0)
+        cxt.lineTo(200,200)
+        cxt.lineTo(0,400)
+        cxt.closePath()
+        cxt.fillStyle = 'yellow'
+        cxt.fill()
+        cxt.stroke()
+
+        cxt.beginPath()
+        cxt.moveTo(400, 0)
+        cxt.lineTo(300,100)
+        cxt.lineTo(400,200)
+        cxt.closePath()
+        cxt.fillStyle = 'blue'
+        cxt.fill()
+        cxt.stroke()
+
+        cxt.beginPath()
+        cxt.moveTo(300, 100)
+        cxt.lineTo(400,200)
+        cxt.lineTo(300,300)
+        cxt.lineTo(200,200)
+        cxt.closePath()
+        cxt.fillStyle = 'red'
+        cxt.fill()
+        cxt.stroke()
+
+        cxt.beginPath()
+        cxt.moveTo(200, 200)
+        cxt.lineTo(100,300)
+        cxt.lineTo(300,300)
+        cxt.closePath()
+        cxt.fillStyle = 'skyblue'
+        cxt.fill()
+        cxt.stroke()
+
+        cxt.beginPath()
+        cxt.moveTo(400, 200)
+        cxt.lineTo(200,400)
+        cxt.lineTo(400,400)
+        cxt.closePath()
+        cxt.fillStyle = 'orange'
+        cxt.fill()
+        cxt.stroke()
+
+        cxt.beginPath()
+        cxt.moveTo(0, 400)
+        cxt.lineTo(100,300)
+        cxt.lineTo(300,300)
+        cxt.lineTo(200,400)
+        cxt.closePath()
+        cxt.fillStyle = 'purple'
+        cxt.fill()
+        cxt.stroke()
+
+    </script>
+</body>
+
+</html>
