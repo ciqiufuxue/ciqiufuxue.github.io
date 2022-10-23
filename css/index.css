@@ -1,0 +1,411 @@
+body {
+    background: #eff4f7;
+    user-select: none;
+}
+
+.content {
+    position: relative;
+    width: 1000px;
+    height: 600px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 20px 5px #dbdadd;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+}
+
+.content .left {
+    flex: 0 0 350px;
+    background: linear-gradient(#1183c0, #eeade4);
+    border-radius: 25px;
+    color: white;
+}
+
+.left .item {
+    width: 200px;
+    height: 400px;
+    margin: 50px auto;
+    position: relative;
+    left: -25px;
+}
+
+.item .myicon {
+    width: 150px;
+    height: 180px;
+    margin: 20px auto;
+}
+
+.item .myicon img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+.left .item .myname {
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.left .item .myhome {
+    text-align: center;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.item .icon-list {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item .icon-list img {
+    width: 16px;
+    cursor: pointer;
+}
+
+.item .icon-img {
+    height: 100px;
+    text-align: center;
+}
+
+.item .icon-img img {
+    height: 100%;
+}
+
+.content .right {
+    flex: 0 0 calc(100% - 300px);
+    border-radius: 25px;
+    position: relative;
+    right: 50px;
+    height: 100%;
+    background: white;
+}
+
+.right .homepage {
+    text-align: center;
+}
+
+.homepage .name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 260px;
+}
+
+.homepage .explain {
+    margin-top: 10px;
+    font-size: 12px;
+    letter-spacing: 4px;
+    color: #aeaeae;
+}
+
+.right .personage {
+    display: none;
+}
+
+.personage .personage-item {
+    box-sizing: border-box;
+    width: calc(100% - 50px);
+    height: 500px;
+    margin: 30px 25px;
+}
+
+.personage-item .personage-top{
+    width: 100%;
+}
+
+.personage-top .personage-top-title {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.personage-top .personage-top-details {
+    width: 100%;
+    height: 160px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.personage-top-details .details-left li {
+    margin: 10px 0;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #1584c0;
+}
+
+.details-left li span {
+    color: #7d7d7d;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-left: 10px;
+}
+.personage-top-details .details-right {
+    margin-left: 50px;
+}
+
+.details-right li {
+    margin: 10px 0;
+    background: linear-gradient(to right, #1183c0, #eeade4);
+    color: transparent;
+    -webkit-background-clip: text;
+}
+
+.details-right li:nth-child(1) {
+    font-weight: bold;
+    color: #1584c0;
+    letter-spacing: 2px;
+}
+
+.personage-top-details div {
+    flex: 1;
+}
+
+.personage-top-title span {
+    padding-left: 5px;
+    color: #1584c0;
+}
+
+.personage-item .personage-bottom {
+    margin-top: 50px;
+}
+
+.personage-bottom .personage-bottom-title {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.personage-bottom .personage-bottom-item {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.personage-bottom-item ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.personage-bottom-item ul li {
+    flex: 1;
+}
+
+.personage-bottom-title span {
+    margin-left: 10px;
+    color: #1584c0;
+}
+
+.right .studentStatus {
+    display: none;
+}
+
+.studentStatus .studentStatus-item {
+    width: calc(100% - 60px);
+    margin: 30px;
+    height: 500px;
+}
+
+.studentStatus-item .studentStatus-title {
+    font-size: 26px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.studentStatus-item .studentStatus-edu {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.studentStatus-edu .studentStatus-edu-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.studentStatus-edu .studentStatus-edu-item {
+    width: 100%;
+    height: 100px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.studentStatus-edu-item .studentStatus-edu-item-time {
+    flex: 0 0 100px;
+    text-align: right;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.studentStatus-edu-item-time div {
+    color: #A5A5A5;
+}
+
+.studentStatus-edu-item .studentStatus-edu-item-major {
+    flex: 1;
+}
+
+.studentStatus-edu-item-major .major-title {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000;
+    margin: 10px 0;
+}
+
+.studentStatus-edu-item-major .major-class {
+    font-size: 12px;
+    color: #000000;
+    line-height: 20px;
+}
+
+.studentStatus-book .book {
+    width: 100%;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.book .line {
+    height: 100%;
+    float: left;
+}
+
+.book .bookname {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+.book .booktime {
+    color: #a5a5a5;
+    font-size: 12px;
+}
+
+.major-class span {
+    color: #A5A5A5;
+}
+
+.studentStatus-item .studentStatus-book {
+    margin-top: 50px;
+}
+
+.studentStatus-book .studentStatus-book-title {
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.line {
+    position: relative;
+    height: 100px;
+    width: 1px;
+    background-color: #e0e0e0;
+    margin: 0 20px;
+}
+
+.line::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    top: 10px;
+    left: -4px;
+    border-radius: 50%;
+    border: 2px solid #36a9d5;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px 2px #bce9f8;
+}
+
+.right .project {
+    display: none;
+}
+
+.content .sidebar {
+    position: absolute;
+    right: -50px;
+    width: 40px;
+    height: 160px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    border-radius: 25px;
+    box-shadow: 0px 0px 20px 5px #dbdadd;
+}
+
+.sidebar div {
+    flex: 1;
+    cursor: pointer;
+    text-align: center;
+    line-height: 40px;
+}
+
+.sidebar div img {
+    width: 16px;
+    align-content: center;
+}
+
+
+@-webkit-keyframes load {
+    0% {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes load {
+    0% {
+        stroke-dashoffset: 0;
+    }
+}
+.progress {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    text-align: center;
+}
+.progress > li {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    color: #93A2AC;
+    font-family: Lato;
+    font-weight: 100;
+    transform: scale(.8);
+}
+.progress > li:before {
+    content: attr(data-name);
+    position: absolute;
+    width: 100%;
+    bottom: -2rem;
+    font-weight: 400;
+}
+.progress > li:after {
+    content: attr(data-percent);
+    position: absolute;
+    width: 100%;
+    top: 3.7rem;
+    left: 0;
+    font-size: 2rem;
+    text-align: center;
+}
+.progress svg {
+    width: 10rem;
+    height: 10rem;
+}
+.progress svg:nth-child(2) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+.progress svg:nth-child(2) path {
+    fill: none;
+    stroke-width: 25;
+    stroke-dasharray: 629;
+    stroke: #fff;
+    opacity: .9;
+    -webkit-animation: load 10s;
+    animation: load 10s;
+}
